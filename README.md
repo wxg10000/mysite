@@ -25,7 +25,10 @@ python3 manage.py migrate app01 # 创建表结构
 ```
 python3 manage.py createsuperuser
 ```
-
+5.安装captcha
+```
+pip3 install django-simple-captcha
+```
 
 
 参考资料：https://www.jianshu.com/p/4f84d0e0c8c9    

@@ -30,11 +30,10 @@ def login(request):
         message = "请检查填写的内容！"
         if login_form.is_valid():
             username = login_form.cleaned_data['username']
-            print(username)
             password = login_form.cleaned_data['password']
             try:
                 user = models.User.objects.get(name=username)
-                if user.password == password:
+                if user.password == password and user.status == 1:
                     request.session['is_login'] = True
                     request.session['user_id'] = user.id
                     request.session['user_name'] = user.name

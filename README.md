@@ -28,4 +28,4 @@ python3 manage.py createsuperuser
 
 
 
-参考资料：https://www.jianshu.com/p/4f84d0e0c8c9
+参考资料：https://www.jianshu.com/p/4f84d0e0c8c9    
